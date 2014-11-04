@@ -1,0 +1,55 @@
+@import "reset";
+
+/* General Styles */
+body {
+  background-color: rgb(241, 241, 241);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0px auto;
+  width: 100%;
+}
+  .js-compiled {
+    background: url('../../img/grunt-logo.png') repeat;
+  }
+
+.wrap {
+  margin: 24px auto;
+  padding: 12px;
+  max-width: 800px;
+  background: white;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1, h2 {
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+.js-compiled .js-test {
+  border: 3px dashed #000;
+  background: #FFCF64; // orange
+}
+
+.css-test {
+  p {
+    display: none;
+  }
+  &:after {
+    display: inline;
+    content: 'CSS has been compiled!';
+    color: #000;
+  }
+}
